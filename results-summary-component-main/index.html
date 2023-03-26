@@ -10,34 +10,91 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    @import url(mycss.css);
+
+    .attribution { position: absolute;
+      top: 90%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="main-container">
+    <div class="result-container"> <!--flexbox or inline block. Not sure which one is better--> 
+      <div class="result-title"><span>Your Result</span></div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="score-container"><div class="score-box"> <!--score-->
+       <div>76</div>
+       <div>of 100</div>
+      </div></div>
 
-  Reaction
-  80 / 100
+      <div class="comment-title"><span>Great</span></div>
 
-  Memory
-  92 / 100
+      <div class="comment"><span>You scored higher than 65% of <br>the people who have taken<br>these tests.</span></div>
+    </div>
+    <div class="summary-container">
+      <div class="summary-title">Summary</div>
+      <div class="summary-factor-container">
+        <div class="summary-factor-box">
+          <div class="summary-factor-titlebox">
+             <div class="summary-factor-reaction-icon" class="reaction-icon"></div>
+            <div class="summary-factor-title">Reaction</div>
+          </div>
+         
+          <div class="summary-factor-score">
+            <span>80</span> 
+            <span>/ 100</span>
+            </div>
+        </div>
+        <div class="summary-factor-box" class="memory-box">
+          <div class="summary-factor-titlebox">
+             <div class="summary-factor-memory-icon" 
+             ></div>
+            <div class="summary-factor-title">Memory</div>
+          </div>
+         
+          <div class="summary-factor-score">
+            <span>92</span> 
+            <span>/ 100</span>
+            </div>
+        </div>
+        <div class="summary-factor-box" class="verbal-box">
+          <div class="summary-factor-titlebox">
+             <div class="summary-factor-verbal-icon"></div>
+            <div class="summary-factor-title">Verbal</div>
+          </div>
+         
+          <div class="summary-factor-score">
+            <span>61</span> 
+            <span>/ 100</span>
+            </div>
+        </div>
+        <div class="summary-factor-box" class="visual-box">
+          <div class="summary-factor-titlebox">
+             <div class="summary-factor-visual-icon"></div>
+            <div class="summary-factor-title">Visual</div>
+          </div>
+         
+          <div class="summary-factor-score">
+            <span>72</span> 
+            <span>/ 100</span>
+            </div>
+        </div>
+      </div>
+      <div class="button-container"><span>Continue</span></div>
+    </div>
 
-  Verbal
-  61 / 100
 
-  Visual
-  72 / 100
 
-  Continue
+
+
+
+
+
+  </div>
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
