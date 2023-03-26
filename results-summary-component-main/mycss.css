@@ -2,8 +2,8 @@
     background-color: hsl(252, 100%, 67%);
     height: 100vh; width: 100vw;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family:'Times New Roman', Times, serif; }
+
 .main-container {
     box-sizing: border-box;
     height: 70%; width: 700px;
@@ -36,12 +36,7 @@
     font-size: 20px;
     color: hsl(241, 100%, 89%)
 }
-.result-title {
-    
-}
-.score-container {
-    
-}
+
 .score-box {
     position: relative;
     left: 80px;
@@ -91,6 +86,7 @@
 .summary-title {
     font-size: 20px;
     width: 100%;
+    font-weight: 700;
 }
 
 .summary-factor-container {
